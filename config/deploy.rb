@@ -23,5 +23,5 @@ namespace :thin do
 end
 
 namespace :deploy do
-  
+  after :finished, 'thin:restart'
 end
