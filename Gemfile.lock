@@ -60,6 +60,7 @@ DEPENDENCIES
   capistrano-rvm
   capistrano-thin
   haml
+  rake
   rmagick
   sequel
   sinatra
