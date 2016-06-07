@@ -1,0 +1,18 @@
+%form#new_post{ action: '/', method: 'post', enctype: 'multipart/form-data' }
+  %input{ name: 'file', type: 'file' }
+  %br
+  %textarea{ name: 'body' }
+  %br
+  %input{ type: 'submit', value: 'Submit' }
+
+#post
+  - @posts.each do |post|
+    .post
+      %div
+        - if post.file
+          %a{ href: post.file }
+            %img.attachment{ src: post.thumbnail }
+      %p
+        ~ post.body.lines.join('<br>')
+      %p{ style: 'clear: left;' }
+        %a{ href: "/posts/#{post.uuid}" } Reply

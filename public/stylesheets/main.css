@@ -1,0 +1,70 @@
+body {
+  background-color: #ddeeff;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* FORM */
+%form {
+  margin: 0;
+  padding: 0;
+}
+
+#new_post {
+  margin: 0 auto;
+  width: 300px;
+  border: 2px solid #778899;
+  padding: 4px;
+}
+
+#new_post textarea {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  height: 100px;
+}
+
+#new_post input {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* POST */
+#post {
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post {
+  margin: 5px;
+  padding: 5px;
+  width: 300px;
+}
+
+img.attachment {
+  max-width: 100px;
+  max-height: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+
+/* FLASH */
+#flash {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.flash {
+  padding: 4px;
+}
+
+.flash.error {
+  background-color: #ffcccc;
+  color: #cc2222;
+}
