@@ -10,7 +10,7 @@ set :deploy_to, "~/apps/#{fetch :application}"
 
 append :linked_dirs, 'tmp', 'log'
 
-namespace :thin do
+namespace :deploy do
   desc 'Make directories for PIDs and Sockets'
   task :make_dirs do
     on roles(:app) do
@@ -20,8 +20,6 @@ namespace :thin do
   end
 
   before :start, :make_dirs
-end
-
-namespace :deploy do
   after :finished, 'thin:restart'
 end
+
