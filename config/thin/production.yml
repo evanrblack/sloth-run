@@ -2,11 +2,13 @@
 user: deploy
 group: deploy
 wait: 30
-log: /home/deploy/apps/shared/log/thin.log
 environment: production
 servers: 1
 threaded: true
 no-epoll: true
 daemonize: true
-chdir: /home/deploy/apps/sloth-run/current
 tag: sloth-run
+log: /home/deploy/apps/shared/log/thin.log
+pid: /home/deploy/apps/shared/tmp/pids/thin.pid
+socket: /home/deploy/apps/shared/tmp/sockets/thin.sock
+chdir: /home/deploy/apps/sloth-run/current
