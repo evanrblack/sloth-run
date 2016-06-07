@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 # For templating
 gem 'haml'
+# For automated tasks
+gem 'rake'
 # For image processing
 gem 'rmagick'
 # For database access
@@ -18,6 +20,6 @@ gem 'thin'
 group :development do
   gem 'capistrano'
   gem 'capistrano-bundler'
-  gem 'capistrano-chruby'
+  gem 'capistrano-rvm'
   gem 'capistrano-thin'
 end

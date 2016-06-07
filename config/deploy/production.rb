@@ -1,1 +1,1 @@
-server 'sloth.moe', user: 'deploy', roles: [:app, :db, :web]
+server 'sloth.run', user: 'deploy', roles: [:app, :db, :web], primary: true

@@ -1,0 +1,318 @@
+# Logfile created on 2016-06-07 15:53:47 -0500 by logger.rb/53141
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-06-07 15:53:47 -0500 cap production rvm:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [9bb6c555] Running [ -d ~/.rvm ] as deploy@sloth.run
+ DEBUG [9bb6c555] Command: [ -d ~/.rvm ]
+ DEBUG [9bb6c555] Finished in 0.437 seconds with exit status 0 (successful).
+ DEBUG [19ec85d3] Running ~/.rvm/bin/rvm version as deploy@sloth.run
+ DEBUG [19ec85d3] Command: ~/.rvm/bin/rvm version
+ DEBUG [19ec85d3] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [19ec85d3] Finished in 0.234 seconds with exit status 0 (successful).
+ DEBUG [1e5446e0] Running ~/.rvm/bin/rvm current as deploy@sloth.run
+ DEBUG [1e5446e0] Command: ~/.rvm/bin/rvm current
+ DEBUG [1e5446e0] 	ruby-2.3.0
+ DEBUG [1e5446e0] Finished in 0.239 seconds with exit status 0 (successful).
+ DEBUG [9d1ed105] Running ~/.rvm/bin/rvm default do ruby --version as deploy@sloth.run
+ DEBUG [9d1ed105] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [9d1ed105] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [9d1ed105] Finished in 0.387 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-06-07 16:05:57 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [5b5a6b97] Running [ -d ~/.rvm ] as deploy@sloth.run
+ DEBUG [5b5a6b97] Command: [ -d ~/.rvm ]
+ DEBUG [5b5a6b97] Finished in 0.405 seconds with exit status 0 (successful).
+ DEBUG [8e4e4a77] Running ~/.rvm/bin/rvm version as deploy@sloth.run
+ DEBUG [8e4e4a77] Command: ~/.rvm/bin/rvm version
+ DEBUG [8e4e4a77] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [8e4e4a77] Finished in 0.302 seconds with exit status 0 (successful).
+ DEBUG [75d8a092] Running ~/.rvm/bin/rvm current as deploy@sloth.run
+ DEBUG [75d8a092] Command: ~/.rvm/bin/rvm current
+ DEBUG [75d8a092] 	ruby-2.3.0
+ DEBUG [75d8a092] Finished in 0.248 seconds with exit status 0 (successful).
+ DEBUG [aa615197] Running ~/.rvm/bin/rvm default do ruby --version as deploy@sloth.run
+ DEBUG [aa615197] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [aa615197] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [aa615197] Finished in 0.343 seconds with exit status 0 (successful).
+  INFO [309d40ba] Running /usr/bin/env mkdir -p /tmp/sloth-run/ as deploy@sloth.run
+ DEBUG [309d40ba] Command: /usr/bin/env mkdir -p /tmp/sloth-run/
+  INFO [309d40ba] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/sloth-run/git-ssh.sh 0.0%
+  INFO Uploading /tmp/sloth-run/git-ssh.sh 100.0%
+  INFO [72563250] Running /usr/bin/env chmod +rx /tmp/sloth-run/git-ssh.sh as deploy@sloth.run
+ DEBUG [72563250] Command: /usr/bin/env chmod +rx /tmp/sloth-run/git-ssh.sh
+  INFO [72563250] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [69b395fe] Running /usr/bin/env git ls-remote --heads git@github.com:evanrblack/sloth-run.git as deploy@sloth.run
+ DEBUG [69b395fe] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/sloth-run/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:evanrblack/sloth-run.git )
+ DEBUG [69b395fe] 	Warning: Permanently added the RSA host key for IP address '192.30.252.130' to the list of known hosts.
+ DEBUG [69b395fe] 	0d67f485fb5df46df80de4aee8379d2d2525be92	refs/heads/master
+  INFO [69b395fe] Finished in 0.669 seconds with exit status 0 (successful).
+  INFO [80d2c3fa] Running /usr/bin/env mkdir -p ~/apps/sloth-run/shared ~/apps/sloth-run/releases as deploy@sloth.run
+ DEBUG [80d2c3fa] Command: /usr/bin/env mkdir -p ~/apps/sloth-run/shared ~/apps/sloth-run/releases
+  INFO [80d2c3fa] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [60ea70b7] Running /usr/bin/env mkdir -p ~/apps/sloth-run/shared/tmp ~/apps/sloth-run/shared/log as deploy@sloth.run
+ DEBUG [60ea70b7] Command: /usr/bin/env mkdir -p ~/apps/sloth-run/shared/tmp ~/apps/sloth-run/shared/log
+  INFO [60ea70b7] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [578aff5d] Running /usr/bin/env mkdir -p ~/apps/sloth-run/shared as deploy@sloth.run
+ DEBUG [578aff5d] Command: /usr/bin/env mkdir -p ~/apps/sloth-run/shared
+  INFO [578aff5d] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [c0b9b5c4] Running [ -f ~/apps/sloth-run/shared/config.ru ] as deploy@sloth.run
+ DEBUG [c0b9b5c4] Command: [ -f ~/apps/sloth-run/shared/config.ru ]
+ DEBUG [c0b9b5c4] Finished in 0.043 seconds with exit status 1 (failed).
+ ERROR linked file ~/apps/sloth-run/shared/config.ru does not exist on sloth.run
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-06-07 16:06:46 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [6045235c] Running [ -d ~/.rvm ] as deploy@sloth.run
+ DEBUG [6045235c] Command: [ -d ~/.rvm ]
+ DEBUG [6045235c] Finished in 0.399 seconds with exit status 0 (successful).
+ DEBUG [9c2c9d1b] Running ~/.rvm/bin/rvm version as deploy@sloth.run
+ DEBUG [9c2c9d1b] Command: ~/.rvm/bin/rvm version
+ DEBUG [9c2c9d1b] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [9c2c9d1b] Finished in 0.233 seconds with exit status 0 (successful).
+ DEBUG [49c3fa7b] Running ~/.rvm/bin/rvm current as deploy@sloth.run
+ DEBUG [49c3fa7b] Command: ~/.rvm/bin/rvm current
+ DEBUG [49c3fa7b] 	ruby-2.3.0
+ DEBUG [49c3fa7b] Finished in 0.239 seconds with exit status 0 (successful).
+ DEBUG [8ffd99c2] Running ~/.rvm/bin/rvm default do ruby --version as deploy@sloth.run
+ DEBUG [8ffd99c2] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [8ffd99c2] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [8ffd99c2] Finished in 0.380 seconds with exit status 0 (successful).
+  INFO [681b56ab] Running /usr/bin/env mkdir -p /tmp/sloth-run/ as deploy@sloth.run
+ DEBUG [681b56ab] Command: /usr/bin/env mkdir -p /tmp/sloth-run/
+  INFO [681b56ab] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/sloth-run/git-ssh.sh 0.0%
+  INFO Uploading /tmp/sloth-run/git-ssh.sh 100.0%
+  INFO [cf80788d] Running /usr/bin/env chmod +rx /tmp/sloth-run/git-ssh.sh as deploy@sloth.run
+ DEBUG [cf80788d] Command: /usr/bin/env chmod +rx /tmp/sloth-run/git-ssh.sh
+  INFO [cf80788d] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [2b00584c] Running /usr/bin/env git ls-remote --heads git@github.com:evanrblack/sloth-run.git as deploy@sloth.run
+ DEBUG [2b00584c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/sloth-run/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:evanrblack/sloth-run.git )
+ DEBUG [2b00584c] 	0d67f485fb5df46df80de4aee8379d2d2525be92	refs/heads/master
+  INFO [2b00584c] Finished in 0.645 seconds with exit status 0 (successful).
+  INFO [6a9fd91e] Running /usr/bin/env mkdir -p ~/apps/sloth-run/shared ~/apps/sloth-run/releases as deploy@sloth.run
+ DEBUG [6a9fd91e] Command: /usr/bin/env mkdir -p ~/apps/sloth-run/shared ~/apps/sloth-run/releases
+  INFO [6a9fd91e] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [10957c9c] Running /usr/bin/env mkdir -p ~/apps/sloth-run/shared/tmp ~/apps/sloth-run/shared/log as deploy@sloth.run
+ DEBUG [10957c9c] Command: /usr/bin/env mkdir -p ~/apps/sloth-run/shared/tmp ~/apps/sloth-run/shared/log
+  INFO [10957c9c] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [73dc7878] Running /usr/bin/env mkdir -p ~/apps/sloth-run/shared as deploy@sloth.run
+ DEBUG [73dc7878] Command: /usr/bin/env mkdir -p ~/apps/sloth-run/shared
+  INFO [73dc7878] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [db8a4bc0] Running [ -f ~/apps/sloth-run/shared/config.ru ] as deploy@sloth.run
+ DEBUG [db8a4bc0] Command: [ -f ~/apps/sloth-run/shared/config.ru ]
+ DEBUG [db8a4bc0] Finished in 0.042 seconds with exit status 1 (failed).
+ ERROR linked file ~/apps/sloth-run/shared/config.ru does not exist on sloth.run
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-06-07 16:07:50 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3f9b830d] Running [ -d ~/.rvm ] as deploy@sloth.run
+ DEBUG [3f9b830d] Command: [ -d ~/.rvm ]
+ DEBUG [3f9b830d] Finished in 0.374 seconds with exit status 0 (successful).
+ DEBUG [44c77039] Running ~/.rvm/bin/rvm version as deploy@sloth.run
+ DEBUG [44c77039] Command: ~/.rvm/bin/rvm version
+ DEBUG [44c77039] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [44c77039] Finished in 0.246 seconds with exit status 0 (successful).
+ DEBUG [b672ba36] Running ~/.rvm/bin/rvm current as deploy@sloth.run
+ DEBUG [b672ba36] Command: ~/.rvm/bin/rvm current
+ DEBUG [b672ba36] 	ruby-2.3.0
+ DEBUG [b672ba36] Finished in 0.235 seconds with exit status 0 (successful).
+ DEBUG [e8e05135] Running ~/.rvm/bin/rvm default do ruby --version as deploy@sloth.run
+ DEBUG [e8e05135] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [e8e05135] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [e8e05135] Finished in 0.435 seconds with exit status 0 (successful).
+  INFO [e33138fa] Running /usr/bin/env mkdir -p /tmp/sloth-run/ as deploy@sloth.run
+ DEBUG [e33138fa] Command: /usr/bin/env mkdir -p /tmp/sloth-run/
+  INFO [e33138fa] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/sloth-run/git-ssh.sh 0.0%
+  INFO Uploading /tmp/sloth-run/git-ssh.sh 100.0%
+  INFO [e7cb6ade] Running /usr/bin/env chmod +rx /tmp/sloth-run/git-ssh.sh as deploy@sloth.run
+ DEBUG [e7cb6ade] Command: /usr/bin/env chmod +rx /tmp/sloth-run/git-ssh.sh
+  INFO [e7cb6ade] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [0e18099e] Running /usr/bin/env git ls-remote --heads git@github.com:evanrblack/sloth-run.git as deploy@sloth.run
+ DEBUG [0e18099e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/sloth-run/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:evanrblack/sloth-run.git )
+ DEBUG [0e18099e] 	0d67f485fb5df46df80de4aee8379d2d2525be92	refs/heads/master
+  INFO [0e18099e] Finished in 0.636 seconds with exit status 0 (successful).
+  INFO [9fdb331e] Running /usr/bin/env mkdir -p ~/apps/sloth-run/shared ~/apps/sloth-run/releases as deploy@sloth.run
+ DEBUG [9fdb331e] Command: /usr/bin/env mkdir -p ~/apps/sloth-run/shared ~/apps/sloth-run/releases
+  INFO [9fdb331e] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [5fc9eac2] Running /usr/bin/env mkdir -p ~/apps/sloth-run/shared/tmp ~/apps/sloth-run/shared/log as deploy@sloth.run
+ DEBUG [5fc9eac2] Command: /usr/bin/env mkdir -p ~/apps/sloth-run/shared/tmp ~/apps/sloth-run/shared/log
+  INFO [5fc9eac2] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [b6a44069] Running [ -f ~/apps/sloth-run/current/REVISION ] as deploy@sloth.run
+ DEBUG [b6a44069] Command: [ -f ~/apps/sloth-run/current/REVISION ]
+ DEBUG [b6a44069] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [04d2a595] Running /usr/bin/env cat ~/apps/sloth-run/current/REVISION 2>/dev/null as deploy@sloth.run
+ DEBUG [04d2a595] Command: /usr/bin/env cat ~/apps/sloth-run/current/REVISION 2>/dev/null
+ DEBUG [04d2a595] 	0d67f48
+ DEBUG [04d2a595] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [023cb0de] Running [ -f ~/apps/sloth-run/repo/HEAD ] as deploy@sloth.run
+ DEBUG [023cb0de] Command: [ -f ~/apps/sloth-run/repo/HEAD ]
+ DEBUG [023cb0de] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO The repository mirror is at ~/apps/sloth-run/repo
+ DEBUG [400628ea] Running if test ! -d ~/apps/sloth-run/repo; then echo "Directory does not exist '~/apps/sloth-run/repo'" 1>&2; false; fi as deploy@sloth.run
+ DEBUG [400628ea] Command: if test ! -d ~/apps/sloth-run/repo; then echo "Directory does not exist '~/apps/sloth-run/repo'" 1>&2; false; fi
+ DEBUG [400628ea] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [04b6d6be] Running /usr/bin/env git remote update --prune as deploy@sloth.run
+ DEBUG [04b6d6be] Command: cd ~/apps/sloth-run/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/sloth-run/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [04b6d6be] 	Fetching origin
+  INFO [04b6d6be] Finished in 0.663 seconds with exit status 0 (successful).
+ DEBUG [67424920] Running if test ! -d ~/apps/sloth-run/repo; then echo "Directory does not exist '~/apps/sloth-run/repo'" 1>&2; false; fi as deploy@sloth.run
+ DEBUG [67424920] Command: if test ! -d ~/apps/sloth-run/repo; then echo "Directory does not exist '~/apps/sloth-run/repo'" 1>&2; false; fi
+ DEBUG [67424920] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [1afb6450] Running /usr/bin/env mkdir -p ~/apps/sloth-run/releases/20160607210752 as deploy@sloth.run
+ DEBUG [1afb6450] Command: cd ~/apps/sloth-run/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/sloth-run/git-ssh.sh" ; /usr/bin/env mkdir -p ~/apps/sloth-run/releases/20160607210752 )
+  INFO [1afb6450] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [afe26b1d] Running /usr/bin/env git archive master | tar -x -f - -C ~/apps/sloth-run/releases/20160607210752 as deploy@sloth.run
+ DEBUG [afe26b1d] Command: cd ~/apps/sloth-run/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/sloth-run/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C ~/apps/sloth-run/releases/20160607210752 )
+  INFO [afe26b1d] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [88333a07] Running if test ! -d ~/apps/sloth-run/repo; then echo "Directory does not exist '~/apps/sloth-run/repo'" 1>&2; false; fi as deploy@sloth.run
+ DEBUG [88333a07] Command: if test ! -d ~/apps/sloth-run/repo; then echo "Directory does not exist '~/apps/sloth-run/repo'" 1>&2; false; fi
+ DEBUG [88333a07] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [e749ed06] Running /usr/bin/env git rev-list --max-count=1 master as deploy@sloth.run
+ DEBUG [e749ed06] Command: cd ~/apps/sloth-run/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/sloth-run/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [e749ed06] 	0d67f485fb5df46df80de4aee8379d2d2525be92
+ DEBUG [e749ed06] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [52336981] Running if test ! -d ~/apps/sloth-run/releases/20160607210752; then echo "Directory does not exist '~/apps/sloth-run/releases/20160607210752'" 1>&2; false; fi as deploy@sloth.run
+ DEBUG [52336981] Command: if test ! -d ~/apps/sloth-run/releases/20160607210752; then echo "Directory does not exist '~/apps/sloth-run/releases/20160607210752'" 1>&2; false; fi
+ DEBUG [52336981] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [c20701ac] Running /usr/bin/env echo "0d67f485fb5df46df80de4aee8379d2d2525be92" >> REVISION as deploy@sloth.run
+ DEBUG [c20701ac] Command: cd ~/apps/sloth-run/releases/20160607210752 && /usr/bin/env echo "0d67f485fb5df46df80de4aee8379d2d2525be92" >> REVISION
+  INFO [c20701ac] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [973ffd03] Running /usr/bin/env mkdir -p ~/apps/sloth-run/releases/20160607210752 as deploy@sloth.run
+ DEBUG [973ffd03] Command: /usr/bin/env mkdir -p ~/apps/sloth-run/releases/20160607210752
+  INFO [973ffd03] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [9a63d1de] Running [ -L ~/apps/sloth-run/releases/20160607210752/tmp ] as deploy@sloth.run
+ DEBUG [9a63d1de] Command: [ -L ~/apps/sloth-run/releases/20160607210752/tmp ]
+ DEBUG [9a63d1de] Finished in 0.068 seconds with exit status 1 (failed).
+ DEBUG [63631b56] Running [ -d ~/apps/sloth-run/releases/20160607210752/tmp ] as deploy@sloth.run
+ DEBUG [63631b56] Command: [ -d ~/apps/sloth-run/releases/20160607210752/tmp ]
+ DEBUG [63631b56] Finished in 0.044 seconds with exit status 1 (failed).
+  INFO [08c14c60] Running /usr/bin/env ln -s ~/apps/sloth-run/shared/tmp ~/apps/sloth-run/releases/20160607210752/tmp as deploy@sloth.run
+ DEBUG [08c14c60] Command: /usr/bin/env ln -s ~/apps/sloth-run/shared/tmp ~/apps/sloth-run/releases/20160607210752/tmp
+  INFO [08c14c60] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [aff003ab] Running [ -L ~/apps/sloth-run/releases/20160607210752/log ] as deploy@sloth.run
+ DEBUG [aff003ab] Command: [ -L ~/apps/sloth-run/releases/20160607210752/log ]
+ DEBUG [aff003ab] Finished in 0.045 seconds with exit status 1 (failed).
+ DEBUG [10c1c506] Running [ -d ~/apps/sloth-run/releases/20160607210752/log ] as deploy@sloth.run
+ DEBUG [10c1c506] Command: [ -d ~/apps/sloth-run/releases/20160607210752/log ]
+ DEBUG [10c1c506] Finished in 0.045 seconds with exit status 1 (failed).
+  INFO [b0b04dae] Running /usr/bin/env ln -s ~/apps/sloth-run/shared/log ~/apps/sloth-run/releases/20160607210752/log as deploy@sloth.run
+ DEBUG [b0b04dae] Command: /usr/bin/env ln -s ~/apps/sloth-run/shared/log ~/apps/sloth-run/releases/20160607210752/log
+  INFO [b0b04dae] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [0b54cace] Running if test ! -d ~/apps/sloth-run/releases/20160607210752; then echo "Directory does not exist '~/apps/sloth-run/releases/20160607210752'" 1>&2; false; fi as deploy@sloth.run
+ DEBUG [0b54cace] Command: if test ! -d ~/apps/sloth-run/releases/20160607210752; then echo "Directory does not exist '~/apps/sloth-run/releases/20160607210752'" 1>&2; false; fi
+ DEBUG [0b54cace] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [18acf572] Running ~/.rvm/bin/rvm default do bundle install --path ~/apps/sloth-run/shared/bundle --without development test --deployment --quiet as deploy@sloth.run
+ DEBUG [18acf572] Command: cd ~/apps/sloth-run/releases/20160607210752 && ~/.rvm/bin/rvm default do bundle install --path ~/apps/sloth-run/shared/bundle --without development test --deployment --quiet
+ DEBUG [18acf572] 	/home/deploy/.rvm/scripts/set: line 19: exec: bundle: not found
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-06-07 16:08:18 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [138c18f4] Running [ -d ~/.rvm ] as deploy@sloth.run
+ DEBUG [138c18f4] Command: [ -d ~/.rvm ]
+ DEBUG [138c18f4] Finished in 0.357 seconds with exit status 0 (successful).
+ DEBUG [bec5b456] Running ~/.rvm/bin/rvm version as deploy@sloth.run
+ DEBUG [bec5b456] Command: ~/.rvm/bin/rvm version
+ DEBUG [bec5b456] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [bec5b456] Finished in 0.247 seconds with exit status 0 (successful).
+ DEBUG [bd0d1cda] Running ~/.rvm/bin/rvm current as deploy@sloth.run
+ DEBUG [bd0d1cda] Command: ~/.rvm/bin/rvm current
+ DEBUG [bd0d1cda] 	ruby-2.3.0
+ DEBUG [bd0d1cda] Finished in 0.229 seconds with exit status 0 (successful).
+ DEBUG [05af5242] Running ~/.rvm/bin/rvm default do ruby --version as deploy@sloth.run
+ DEBUG [05af5242] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [05af5242] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [05af5242] Finished in 0.383 seconds with exit status 0 (successful).
+  INFO [6c5515d4] Running /usr/bin/env mkdir -p /tmp/sloth-run/ as deploy@sloth.run
+ DEBUG [6c5515d4] Command: /usr/bin/env mkdir -p /tmp/sloth-run/
+  INFO [6c5515d4] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/sloth-run/git-ssh.sh 0.0%
+  INFO Uploading /tmp/sloth-run/git-ssh.sh 100.0%
+  INFO [704ecb9a] Running /usr/bin/env chmod +rx /tmp/sloth-run/git-ssh.sh as deploy@sloth.run
+ DEBUG [704ecb9a] Command: /usr/bin/env chmod +rx /tmp/sloth-run/git-ssh.sh
+  INFO [704ecb9a] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [2816a342] Running /usr/bin/env git ls-remote --heads git@github.com:evanrblack/sloth-run.git as deploy@sloth.run
+ DEBUG [2816a342] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/sloth-run/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:evanrblack/sloth-run.git )
+ DEBUG [2816a342] 	0d67f485fb5df46df80de4aee8379d2d2525be92	refs/heads/master
+  INFO [2816a342] Finished in 0.636 seconds with exit status 0 (successful).
+  INFO [9fd2a600] Running /usr/bin/env mkdir -p ~/apps/sloth-run/shared ~/apps/sloth-run/releases as deploy@sloth.run
+ DEBUG [9fd2a600] Command: /usr/bin/env mkdir -p ~/apps/sloth-run/shared ~/apps/sloth-run/releases
+  INFO [9fd2a600] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [6706b101] Running /usr/bin/env mkdir -p ~/apps/sloth-run/shared/tmp ~/apps/sloth-run/shared/log as deploy@sloth.run
+ DEBUG [6706b101] Command: /usr/bin/env mkdir -p ~/apps/sloth-run/shared/tmp ~/apps/sloth-run/shared/log
+  INFO [6706b101] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [9a7fe98e] Running [ -f ~/apps/sloth-run/current/REVISION ] as deploy@sloth.run
+ DEBUG [9a7fe98e] Command: [ -f ~/apps/sloth-run/current/REVISION ]
+ DEBUG [9a7fe98e] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [53a9be46] Running /usr/bin/env cat ~/apps/sloth-run/current/REVISION 2>/dev/null as deploy@sloth.run
+ DEBUG [53a9be46] Command: /usr/bin/env cat ~/apps/sloth-run/current/REVISION 2>/dev/null
+ DEBUG [53a9be46] 	0d67f48
+ DEBUG [53a9be46] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [f503b265] Running [ -f ~/apps/sloth-run/repo/HEAD ] as deploy@sloth.run
+ DEBUG [f503b265] Command: [ -f ~/apps/sloth-run/repo/HEAD ]
+ DEBUG [f503b265] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO The repository mirror is at ~/apps/sloth-run/repo
+ DEBUG [f68b1773] Running if test ! -d ~/apps/sloth-run/repo; then echo "Directory does not exist '~/apps/sloth-run/repo'" 1>&2; false; fi as deploy@sloth.run
+ DEBUG [f68b1773] Command: if test ! -d ~/apps/sloth-run/repo; then echo "Directory does not exist '~/apps/sloth-run/repo'" 1>&2; false; fi
+ DEBUG [f68b1773] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [3d07440c] Running /usr/bin/env git remote update --prune as deploy@sloth.run
+ DEBUG [3d07440c] Command: cd ~/apps/sloth-run/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/sloth-run/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [3d07440c] 	Fetching origin
+  INFO [3d07440c] Finished in 0.642 seconds with exit status 0 (successful).
+ DEBUG [144dd590] Running if test ! -d ~/apps/sloth-run/repo; then echo "Directory does not exist '~/apps/sloth-run/repo'" 1>&2; false; fi as deploy@sloth.run
+ DEBUG [144dd590] Command: if test ! -d ~/apps/sloth-run/repo; then echo "Directory does not exist '~/apps/sloth-run/repo'" 1>&2; false; fi
+ DEBUG [144dd590] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [b9d559e7] Running /usr/bin/env mkdir -p ~/apps/sloth-run/releases/20160607210821 as deploy@sloth.run
+ DEBUG [b9d559e7] Command: cd ~/apps/sloth-run/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/sloth-run/git-ssh.sh" ; /usr/bin/env mkdir -p ~/apps/sloth-run/releases/20160607210821 )
+  INFO [b9d559e7] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [0bb9db9a] Running /usr/bin/env git archive master | tar -x -f - -C ~/apps/sloth-run/releases/20160607210821 as deploy@sloth.run
+ DEBUG [0bb9db9a] Command: cd ~/apps/sloth-run/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/sloth-run/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C ~/apps/sloth-run/releases/20160607210821 )
+  INFO [0bb9db9a] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [0741a2ee] Running if test ! -d ~/apps/sloth-run/repo; then echo "Directory does not exist '~/apps/sloth-run/repo'" 1>&2; false; fi as deploy@sloth.run
+ DEBUG [0741a2ee] Command: if test ! -d ~/apps/sloth-run/repo; then echo "Directory does not exist '~/apps/sloth-run/repo'" 1>&2; false; fi
+ DEBUG [0741a2ee] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [e5f556b9] Running /usr/bin/env git rev-list --max-count=1 master as deploy@sloth.run
+ DEBUG [e5f556b9] Command: cd ~/apps/sloth-run/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/sloth-run/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [e5f556b9] 	0d67f485fb5df46df80de4aee8379d2d2525be92
+ DEBUG [e5f556b9] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [e4b1ebe4] Running if test ! -d ~/apps/sloth-run/releases/20160607210821; then echo "Directory does not exist '~/apps/sloth-run/releases/20160607210821'" 1>&2; false; fi as deploy@sloth.run
+ DEBUG [e4b1ebe4] Command: if test ! -d ~/apps/sloth-run/releases/20160607210821; then echo "Directory does not exist '~/apps/sloth-run/releases/20160607210821'" 1>&2; false; fi
+ DEBUG [e4b1ebe4] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [1ddf8ad5] Running /usr/bin/env echo "0d67f485fb5df46df80de4aee8379d2d2525be92" >> REVISION as deploy@sloth.run
+ DEBUG [1ddf8ad5] Command: cd ~/apps/sloth-run/releases/20160607210821 && /usr/bin/env echo "0d67f485fb5df46df80de4aee8379d2d2525be92" >> REVISION
+  INFO [1ddf8ad5] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [b282e30b] Running /usr/bin/env mkdir -p ~/apps/sloth-run/releases/20160607210821 as deploy@sloth.run
+ DEBUG [b282e30b] Command: /usr/bin/env mkdir -p ~/apps/sloth-run/releases/20160607210821
+  INFO [b282e30b] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [92ab92e3] Running [ -L ~/apps/sloth-run/releases/20160607210821/tmp ] as deploy@sloth.run
+ DEBUG [92ab92e3] Command: [ -L ~/apps/sloth-run/releases/20160607210821/tmp ]
+ DEBUG [92ab92e3] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [ec6d16f2] Running [ -d ~/apps/sloth-run/releases/20160607210821/tmp ] as deploy@sloth.run
+ DEBUG [ec6d16f2] Command: [ -d ~/apps/sloth-run/releases/20160607210821/tmp ]
+ DEBUG [ec6d16f2] Finished in 0.043 seconds with exit status 1 (failed).
+  INFO [a51dfe13] Running /usr/bin/env ln -s ~/apps/sloth-run/shared/tmp ~/apps/sloth-run/releases/20160607210821/tmp as deploy@sloth.run
+ DEBUG [a51dfe13] Command: /usr/bin/env ln -s ~/apps/sloth-run/shared/tmp ~/apps/sloth-run/releases/20160607210821/tmp
+  INFO [a51dfe13] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [26e5bf30] Running [ -L ~/apps/sloth-run/releases/20160607210821/log ] as deploy@sloth.run
+ DEBUG [26e5bf30] Command: [ -L ~/apps/sloth-run/releases/20160607210821/log ]
+ DEBUG [26e5bf30] Finished in 0.043 seconds with exit status 1 (failed).
+ DEBUG [3d005cbe] Running [ -d ~/apps/sloth-run/releases/20160607210821/log ] as deploy@sloth.run
+ DEBUG [3d005cbe] Command: [ -d ~/apps/sloth-run/releases/20160607210821/log ]
+ DEBUG [3d005cbe] Finished in 0.046 seconds with exit status 1 (failed).
+  INFO [68cb8625] Running /usr/bin/env ln -s ~/apps/sloth-run/shared/log ~/apps/sloth-run/releases/20160607210821/log as deploy@sloth.run
+ DEBUG [68cb8625] Command: /usr/bin/env ln -s ~/apps/sloth-run/shared/log ~/apps/sloth-run/releases/20160607210821/log
+  INFO [68cb8625] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [89276301] Running if test ! -d ~/apps/sloth-run/releases/20160607210821; then echo "Directory does not exist '~/apps/sloth-run/releases/20160607210821'" 1>&2; false; fi as deploy@sloth.run
+ DEBUG [89276301] Command: if test ! -d ~/apps/sloth-run/releases/20160607210821; then echo "Directory does not exist '~/apps/sloth-run/releases/20160607210821'" 1>&2; false; fi
+ DEBUG [89276301] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [024e9941] Running ~/.rvm/bin/rvm default do bundle install --path ~/apps/sloth-run/shared/bundle --without development test --deployment --quiet as deploy@sloth.run
+ DEBUG [024e9941] Command: cd ~/apps/sloth-run/releases/20160607210821 && ~/.rvm/bin/rvm default do bundle install --path ~/apps/sloth-run/shared/bundle --without development test --deployment --quiet
+ DEBUG [024e9941] 	You are trying to install in deployment mode after changing
+your Gemfile. Run `bundle install` elsewhere and add the
+updated Gemfile.lock to version control.
+
+You have added to the Gemfile:
+* streamio-ffmpeg
+* capistrano-thin
