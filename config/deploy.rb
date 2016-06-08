@@ -8,7 +8,7 @@ set :deploy_to, "~/apps/#{fetch :application}"
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
-append :linked_dirs, 'tmp', 'log'
+append :linked_dirs, 'tmp', 'log', 'config'
 
 namespace :deploy do
   desc 'Make directories for PIDs and Sockets'
