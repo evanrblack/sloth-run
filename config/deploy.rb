@@ -19,15 +19,15 @@ namespace :deploy do
     end
   end
 
-  desc 'Make directory for uploads'
-  task :make_upload_dir do
+  desc 'Make directory for uploads and their thumbails'
+  task :make_upload_dirs do
     on roles(:app) do
-      execute "mkdir #{shared_path}/public/uploads -p"
+      execute "mkdir #{shared_path}/public/uploads/thumbnails -p"
     end
   end
 
   before :starting, :make_tmp_dirs
-  before :starting, :make_upload_dir
+  before :starting, :make_upload_dirs
   after :finishing, 'thin:restart'
 end
 
