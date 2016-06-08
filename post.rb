@@ -14,7 +14,7 @@ TAGS = [:anime, :manga, :technology, :video_games, :weapons]
 class Post
   attr_accessor :uuid, :created_at, :file, :body, :thumbnail, :visits, :votes
   def initialize(file, body)
-    raise "Empty post body" if body.strip.empty?
+    raise "Empty post body" if !file and body.strip.empty?
     @uuid = SecureRandom.uuid
     @created_at = Time.now
     if file
