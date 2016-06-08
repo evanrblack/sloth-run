@@ -19,7 +19,7 @@ namespace :deploy do
     end
   end
 
-  before :start, :make_dirs
-  after :finished, 'thin:restart'
+  before :starting, :make_dirs
+  after :finishing, 'thin:restart'
 end
 
