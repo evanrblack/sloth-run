@@ -4,7 +4,7 @@ require 'sinatra/flash'
 
 require './models/post'
 
-class SlothMoe < Sinatra::Base
+class SlothRun < Sinatra::Base
   configure do
     enable :sessions
     register Sinatra::Flash

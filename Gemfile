@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# For websockets
+gem 'websocket-eventmachine-server'
 # For templating
 gem 'haml'
 # For automated tasks

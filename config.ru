@@ -1,2 +1,2 @@
 require './app'
-run SlothMoe
+run SlothRun
