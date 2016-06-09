@@ -46,13 +46,21 @@ body {
   width: 300px;
 }
 
-img.attachment {
+img.attachment-sm {
   max-width: 100px;
   max-height: 100px;
   float: left;
   margin-right: 10px;
+  user-select: none;
 }
 
+img.attachment-md {
+  max-width: 400px;
+  max-height: 400px;
+  float: left;
+  margin-right: 10px;
+  user-select: none;
+}
 
 /* FLASH */
 #flash {

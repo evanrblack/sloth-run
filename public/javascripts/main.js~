@@ -1,0 +1,1 @@
+var attachments = document.getElementsByClassName("classname");

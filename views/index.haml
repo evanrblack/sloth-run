@@ -11,7 +11,7 @@
       %div
         - if post.file
           %a{ href: post.file }
-            %img.attachment{ src: post.thumbnail }
+            %img.attachment-sm{ src: post.thumbnail }
       %p
         ~ post.body.lines.join('<br>')
       %p{ style: 'clear: left;' }

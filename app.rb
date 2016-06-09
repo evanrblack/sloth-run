@@ -2,7 +2,7 @@ require 'securerandom'
 require 'sinatra/base'
 require 'sinatra/flash'
 
-require './post'
+require './models/post'
 
 class SlothMoe < Sinatra::Base
   configure do
