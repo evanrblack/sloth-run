@@ -1,5 +1,5 @@
 %form#new_post{ action: '/', method: 'post', enctype: 'multipart/form-data' }
-  %input{ name: 'file', type: 'file' }
+  %input{ name: 'files[]', type: 'file', multiple: true }
   %br
   %textarea{ name: 'body' }
   %br
@@ -9,9 +9,10 @@
   - @posts.each do |post|
     .post
       %div
-        - if post.file
-          %a{ href: post.file }
-            %img.attachment-sm{ src: post.thumbnail }
+        - if post.files
+          - post.files.each_with_index do |file, index|
+            %a{ href: file }
+              %img.attachment{ src: post.thumbnails[index] }
       %p
         ~ post.body.lines.join('<br>')
       %p{ style: 'clear: left;' }

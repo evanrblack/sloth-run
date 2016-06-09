@@ -37,16 +37,16 @@ body {
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
 }
 
 .post {
   margin: 5px;
   padding: 5px;
-  width: 300px;
+  width: 400px;
 }
 
-img.attachment-sm {
+.attachment {
   max-width: 100px;
   max-height: 100px;
   float: left;
@@ -54,12 +54,8 @@ img.attachment-sm {
   user-select: none;
 }
 
-img.attachment-md {
-  max-width: 400px;
-  max-height: 400px;
-  float: left;
-  margin-right: 10px;
-  user-select: none;
+.post p {
+
 }
 
 /* FLASH */

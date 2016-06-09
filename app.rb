@@ -19,11 +19,11 @@ class SlothMoe < Sinatra::Base
 
   post '/' do
     puts params
-    begin
-      settings.posts << Post.new(params[:file], params[:body])
-    rescue Exception => e
-      flash[:error] = e.message
-    end
+    #begin
+      settings.posts << Post.new(params[:files], params[:body])
+    #rescue Exception => e
+    #  flash[:error] = e.message
+    #end
     redirect '/'
   end
 
