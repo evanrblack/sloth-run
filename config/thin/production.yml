@@ -4,7 +4,7 @@ group: deploy
 wait: 30
 environment: production
 servers: 1
-threaded: true
+threaded: false
 no-epoll: true
 daemonize: true
 tag: sloth-run

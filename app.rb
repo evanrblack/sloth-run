@@ -1,8 +1,6 @@
 require 'securerandom'
 require 'sinatra/base'
 require 'sinatra/flash'
-require 'thin'
-require 'websocket-eventmachine-server'
 
 require './models/post'
 
@@ -40,8 +38,4 @@ class SlothRun < Sinatra::Base
     @post.votes += 1
     redirect to('/')
   end
-end
-
-EM.run do
-  Thin::Server.start(SlothMoe)
 end
